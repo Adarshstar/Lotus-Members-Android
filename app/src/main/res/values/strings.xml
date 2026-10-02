@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Lotus Members</string>
+    <string name="api_base">https://186grrfevd.execute-api.ap-south-1.amazonaws.com/</string>
+    <string name="api_key">lotus2026</string>
+    <string name="server_display_name">Lotus</string>
+    <string name="default_host">lotus.taspmail.online</string>
+    <string name="default_port">19132</string>
+</resources>
