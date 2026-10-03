@@ -51,6 +51,11 @@ public class MainActivity extends AppCompatActivity {
     private MaterialButton btnJoin, btnStart, btnCopy, btnShare;
 
     private final Handler handler = new Handler(Looper.getMainLooper());
+    private void openChat() {
+        startActivity(new Intent(this, ChatActivity.class));
+        overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
+    }
+
     private final OkHttpClient http = new OkHttpClient.Builder()
             .connectTimeout(8, TimeUnit.SECONDS)
             .readTimeout(10, TimeUnit.SECONDS)
@@ -122,7 +127,11 @@ public class MainActivity extends AppCompatActivity {
 
         btnJoin.setOnClickListener(v -> openMinecraftAddServer());
         btnStart.setOnClickListener(v -> startServer());
-        btnShare.setOnClickListener(v -> shareJoin());
+        btnShare.setOnClickListener(v -> openChat());
+        // legacy share kept via long-press on address
+        btnShare.setOnLongClickListener(v -> { /* share */ return true; });
+        // placeholder disable
+        if (false) btnShare.setOnClickListener(v -> shareJoin());
     }
 
     @Override protected void onResume() {
