@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/lotus_bg" android:fitsSystemWindows="true">
+  <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+      android:orientation="vertical" android:gravity="center_horizontal"
+      android:paddingHorizontal="24dp" android:paddingTop="72dp" android:paddingBottom="32dp">
+    <View android:layout_width="56dp" android:layout_height="56dp"
+        android:background="@drawable/bg_logo_lotus"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_marginTop="20dp" android:text="Lotus"
+        android:textColor="@color/lotus_label" android:textSize="34sp" android:textStyle="bold"
+        android:letterSpacing="-0.02"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_marginTop="6dp" android:text="Members"
+        android:textColor="@color/lotus_secondary" android:textSize="17sp"/>
+    <EditText android:id="@+id/inviteInput" android:layout_width="match_parent"
+        android:layout_height="52dp" android:layout_marginTop="48dp"
+        android:background="@drawable/bg_input" android:paddingHorizontal="16dp"
+        android:hint="Invite code" android:textColorHint="@color/lotus_tertiary"
+        android:textColor="@color/lotus_label" android:textSize="17sp"
+        android:inputType="textVisiblePassword" android:maxLines="1"
+        android:importantForAutofill="no"/>
+    <Button android:id="@+id/btnContinue" android:layout_width="match_parent"
+        android:layout_height="50dp" android:layout_marginTop="16dp"
+        android:background="@drawable/bg_btn_primary" android:text="Continue"
+        android:textAllCaps="false" android:textColor="@color/lotus_label"
+        android:textSize="17sp" android:textStyle="bold"/>
+    <TextView android:id="@+id/btnPasskey" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_marginTop="16dp"
+        android:text="Use passkey" android:textColor="@color/lotus_blue" android:textSize="15sp"
+        android:padding="12dp"/>
+    <View android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="Private server · Members only"
+        android:textColor="@color/lotus_tertiary" android:textSize="13sp"/>
+  </LinearLayout>
+</FrameLayout>
