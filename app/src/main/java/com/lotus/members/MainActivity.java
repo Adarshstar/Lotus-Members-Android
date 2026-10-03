@@ -89,6 +89,11 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        if (!getSharedPreferences("lotus_auth", MODE_PRIVATE).getBoolean("signed_in", false)) {
+            startActivity(new Intent(this, LoginActivity.class));
+            finish();
+            return;
+        }
         setContentView(R.layout.activity_main);
 
         swipe = findViewById(R.id.swipe);
