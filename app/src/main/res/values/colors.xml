@@ -1,14 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="lotus_bg">#000000</color>
+    <color name="lotus_surface">#1C1C1E</color>
+    <color name="lotus_surface2">#2C2C2E</color>
+    <color name="lotus_separator">#38383A</color>
+    <color name="lotus_label">#FFFFFF</color>
+    <color name="lotus_secondary">#8E8E93</color>
+    <color name="lotus_tertiary">#636366</color>
+    <color name="lotus_blue">#0A84FF</color>
+    <color name="lotus_green">#30D158</color>
+    <color name="lotus_red">#FF453A</color>
+    <color name="lotus_chat_out">#0A84FF</color>
+    <color name="lotus_chat_in">#2C2C2E</color>
     <color name="bg">#000000</color>
-    <color name="card">#B31C1C1E</color>
-    <color name="label">#F5F5F7</color>
-    <color name="secondary">#99EBEBF5</color>
-    <color name="tertiary">#4DEBEBF5</color>
-    <color name="blue">#0A84FF</color>
+    <color name="text">#FFFFFF</color>
+    <color name="muted">#8E8E93</color>
     <color name="green">#30D158</color>
     <color name="orange">#FF9F0A</color>
     <color name="red">#FF453A</color>
-    <color name="stroke">#1FFFFFFF</color>
-    <color name="fill">#33787880</color>
 </resources>
