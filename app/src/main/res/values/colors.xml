@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- iOS 27 OLED + Liquid Glass tokens -->
+    <!-- iOS 27 OLED + Liquid Glass -->
     <color name="lotus_bg">#000000</color>
     <color name="lotus_surface">#1C1C1E</color>
     <color name="lotus_surface2">#2C2C2E</color>
@@ -16,11 +16,19 @@
     <color name="lotus_glass_fill">#B82C2C2E</color>
     <color name="lotus_glass_edge">#80000000</color>
     <color name="lotus_specular">#24FFFFFF</color>
-    <!-- legacy aliases -->
+    <!-- aliases used by activity_main.xml and legacy layouts -->
     <color name="bg">#000000</color>
     <color name="text">#FFFFFF</color>
     <color name="muted">#8E8E93</color>
     <color name="green">#30D158</color>
     <color name="orange">#FF9F0A</color>
     <color name="red">#FF453A</color>
+    <color name="label">#FFFFFF</color>
+    <color name="secondary">#8E8E93</color>
+    <color name="tertiary">#636366</color>
+    <color name="blue">#0A84FF</color>
+    <color name="surface">#1C1C1E</color>
+    <color name="surface2">#2C2C2E</color>
+    <color name="card">#1C1C1E</color>
+    <color name="border">#38383A</color>
 </resources>
